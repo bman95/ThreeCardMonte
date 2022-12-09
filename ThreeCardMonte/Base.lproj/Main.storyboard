@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThreeCardMonte" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcY-U0-ve1">
+                                <rect key="frame" x="20" y="157" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rgP-l9-0hU">
+                                <rect key="frame" x="49" y="218.5" width="316" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZb-3m-jg7" userLabel="Card1">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="CAX-Sz-6zd"/>
+                                            <constraint firstAttribute="width" constant="100" id="rQ0-vC-lhi"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="cardBackRed"/>
+                                        <connections>
+                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovg-yi-n2K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbh-6g-cBa" userLabel="Card2">
+                                        <rect key="frame" x="108" y="0.0" width="100" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="gZC-MV-7n2"/>
+                                            <constraint firstAttribute="width" constant="100" id="iBl-0N-i54"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="cardBackRed"/>
+                                        <connections>
+                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="alz-M5-qTd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwC-Ha-db3" userLabel="Card3">
+                                        <rect key="frame" x="216" y="0.0" width="100" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="AAE-lj-cCB"/>
+                                            <constraint firstAttribute="width" constant="100" id="lgC-hv-6ns"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="cardBackRed"/>
+                                        <connections>
+                                            <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6I-5I-UzC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWj-vt-OEE">
+                                <rect key="frame" x="154" y="418" width="106" height="39"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="New Game"/>
+                                <connections>
+                                    <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="guv-Ra-hbM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sWj-vt-OEE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0hn-kb-aXq"/>
+                            <constraint firstItem="NcY-U0-ve1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="4FE-CB-RVd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NcY-U0-ve1" secondAttribute="trailing" constant="20" id="B8O-4T-52z"/>
+                            <constraint firstItem="rgP-l9-0hU" firstAttribute="top" secondItem="NcY-U0-ve1" secondAttribute="bottom" constant="35" id="SgL-ND-1X1"/>
+                            <constraint firstItem="NcY-U0-ve1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xrf-mL-S0c"/>
+                            <constraint firstItem="sWj-vt-OEE" firstAttribute="top" secondItem="rgP-l9-0hU" secondAttribute="bottom" constant="49.5" id="cLS-GS-rWN"/>
+                            <constraint firstItem="rgP-l9-0hU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eic-h1-fqh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="card1" destination="XZb-3m-jg7" id="XlP-Vj-FXb"/>
+                        <outlet property="card2" destination="wbh-6g-cBa" id="yj0-TD-wOp"/>
+                        <outlet property="card3" destination="DwC-Ha-db3" id="1vG-EF-mrJ"/>
+                        <outlet property="cardSelectionWas" destination="NcY-U0-ve1" id="Vzk-KU-z4F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cardBackRed" width="686" height="976"/>
+    </resources>
+</document>
